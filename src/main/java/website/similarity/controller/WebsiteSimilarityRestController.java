@@ -33,6 +33,8 @@ public class WebsiteSimilarityRestController {
 		try {
 			document1 = Jsoup.connect(url1).get();
 			document2 = Jsoup.connect(url2).get();
+			System.out.println(document1.text());
+			System.out.println(document2.text());
 			return jaccardIndexCalculatorService.calculateJaccardIndex(document1.text(), document2.text());
 		} catch (IOException e) {
 			log.severe(e.getMessage());

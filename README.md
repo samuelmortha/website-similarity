@@ -2,6 +2,9 @@
 # cisco-jaccard-index
 Code challenge for Cisco interview.
 
+================== REMOVE SYSOUTS IN THE CODE ===================
+
+
 The Jaccard index, also known as Intersection over Union, is a statistic used for gauging the similarity and diversity of sample sets. 
 The Jaccard coefficient measures similarity between finite sample sets, 
 and is defined as the size of the intersection divided by the size of the union of the sample sets:
@@ -20,4 +23,8 @@ http://localhost:8080/website-similarity?url1=http://www.google.com&url2=https:/
 http://localhost:8080/website-similarity?url1=http://www.google.com&url2=https://www.google.com
 
 http://localhost:8080/website-similarity?url1=https://www.encyclopedia.com/places/united-states-and-canada/us-political-geography/united-states&url2=https://en.wikipedia.org/wiki/United_States
+
+http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Horse&url2=https://en.wikipedia.org/wiki/Zebra
+
+http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Mansion&url2=https://en.wikipedia.org/wiki/Bungalow
 
