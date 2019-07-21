@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class JaccardIndexCalculatorServiceImpl implements JaccardIndexCalculatorService{
 
-	private static final Logger log = Logger.getLogger(JaccardIndexCalculatorServiceImpl.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(JaccardIndexCalculatorServiceImpl.class.getName());
 	
 	@Override
 	public Double calculateJaccardIndex(String text1, String text2) {
 
-		log.info("Initiated Jaccard index calculation");
+		LOGGER.info("Initiated Jaccard index calculation");
 			
 		Set<String> setA = convertTextToStringsSet(text1);
 		Set<String> setB = convertTextToStringsSet(text2);

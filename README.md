@@ -28,3 +28,5 @@ http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Hors
 
 http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Mansion&url2=https://en.wikipedia.org/wiki/Bungalow
 
+curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Orange_(fruit)"
+curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Lemon"
