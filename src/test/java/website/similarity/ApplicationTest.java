@@ -20,11 +20,11 @@ public class ApplicationTest {
 	private static final Logger LOGGER = Logger.getLogger(ApplicationTest.class.getName());
 
 	@Autowired
-	WebsiteSimilarityRestController medicineRestController;
+	WebsiteSimilarityRestController websiteSimilarityRestController;
 	
 	@Test
 	public void contextLoads() throws Exception {
 		LOGGER.info("Inside Application Test : " + LocalDateTime.now());
-		assertThat(medicineRestController).isNotNull();
+		assertThat(websiteSimilarityRestController).isNotNull();
 	}
 }

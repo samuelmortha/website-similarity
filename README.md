@@ -2,7 +2,9 @@
 # cisco-jaccard-index
 Code challenge for Cisco interview.
 
-================== REMOVE SYSOUTS IN THE CODE ===================
+================== REMOVE SYSOUTS IN THE CODE 
+
+RUN the application as WebService and test :-) ===================
 
 
 The Jaccard index, also known as Intersection over Union, is a statistic used for gauging the similarity and diversity of sample sets. 
@@ -30,3 +32,4 @@ http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Mans
 
 curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Orange_(fruit)"
 curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Lemon"
+https://en.wikipedia.org/wiki/Cisco_Systems

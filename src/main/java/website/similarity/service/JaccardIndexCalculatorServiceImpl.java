@@ -31,7 +31,7 @@ public class JaccardIndexCalculatorServiceImpl implements JaccardIndexCalculator
 		
 		Set<String> resultStringSet = new HashSet<String>();
 		
-		for(String string : text.split(" ")) {
+		for(String string : text.toLowerCase().split(" ")) {
 			if(string.contains(".")) {
 				for(String subString : string.split(".")) {
 					resultStringSet.add(subString);
