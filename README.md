@@ -16,6 +16,7 @@ J(A,B)	= |A intersection B| / |A union B|
 
 ** Source : Wikipedia (https://en.wikipedia.org/wiki/Jaccard_index)
 
+Used jsoup : Java HTML Parser, java library.
 
 Environment needed to run :
 

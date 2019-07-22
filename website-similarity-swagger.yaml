@@ -1,0 +1,44 @@
+swagger: "2.0"
+info:
+  description: "This is a Cisco technical test api."
+  version: "1.0.0"
+  title: "Cisco technical test"
+  contact:
+    email: "sam.mortha@gmail.com"
+  license:
+    name: "Apache 2.0"
+host: "localhost:8080"
+basePath: "/"
+tags:
+- name: "website-similarity jaccard index"
+  description: "calculate similarity of two websites using jaccard index"
+schemes:
+- "http"
+paths:
+  /website-similarity:
+    get:
+      tags:
+      - "similarity factor of two URLS"
+      summary: "Calculate Jaccard index of content from two URLs"
+      description: "Calculate Jaccard index of content from two URLs"
+      operationId: "calculateJaccardIndex"
+      parameters:
+      -	name: "url1"
+      	in: "query"
+      	type: "string"
+      	required: true
+      	description: "URL1 to pull content from source1."
+      -	name: "url2"
+      	in: "query"
+      	type: "string"
+      	required: true
+      	description: "URL2 to pull content from source2."
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "number"
+            format: "double"
+	

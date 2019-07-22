@@ -7,7 +7,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,25 +28,6 @@ public class WebsiteSimilarityRestController {
 	@RequestMapping("website-similarity")
 	@ResponseBody
 	public Double getWebsiteSimilarityAsJaccardIndex(@RequestParam(required = true) String url1, @RequestParam(required = true) String url2) {
-		
-		LOGGER.info("Received request to calculate website-similarity between the urls " + url1 + " and " + url2);
-		
-		Document document1;
-		Document document2;
-		try {
-			document1 = Jsoup.connect(url1).get();
-			document2 = Jsoup.connect(url2).get();
-			return jaccardIndexCalculatorService.calculateJaccardIndex(document1.body().text(), document2.body().text());
-		} catch (IOException e) {
-			LOGGER.severe(e.getMessage());
-			throw new ResourceNotFoundException(e.getMessage());
-		}
-	}
-	
-	@GetMapping
-	@RequestMapping("website-similarity/{url1}/{url2}")
-	@ResponseBody
-	public Double getWebsiteSimilarityAsJaccardIndexPV(@PathVariable(required = true) String url1, @PathVariable(required = true) String url2) {
 		
 		LOGGER.info("Received request to calculate website-similarity between the urls " + url1 + " and " + url2);
 		
