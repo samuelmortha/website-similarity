@@ -21,7 +21,7 @@ Used jsoup : Java HTML Parser, java library.
 Environment needed to run :
 
 Java Version 8 or higher
-Maven project management tool
+Maven project management tool (v 3.3.9)
 cURL or Postman tool for testing
 
 Steps to run :
