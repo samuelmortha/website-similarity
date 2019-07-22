@@ -1,7 +1,7 @@
 # website-similarity
 Code challenge for Cisco interview.
 
-Overview :
+Overview of problem to solve :
 
 The Jaccard index, also known as Intersection over Union, is a statistic used for gauging the similarity and diversity of sample sets. 
 The Jaccard coefficient measures similarity between finite sample sets, 
@@ -16,15 +16,17 @@ J(A,B)	= |A intersection B| / |A union B|
 
 ** Source : Wikipedia (https://en.wikipedia.org/wiki/Jaccard_index)
 
+Developed a SpringBoot application which exposes a RESTful API endpoint, which takes url1 and url2 in query parameters and returns the website-similarity index(Jaccard index).
+
 Used jsoup : Java HTML Parser, java library.
 
 Environment needed to run :
 
-Java Version 8 or higher
+	Java Version 8 or higher
 
-Maven project management tool (v 3.3.9)
+	Maven project management tool (v 3.3.9)
 
-cURL or Postman tool for testing
+	cURL or Postman tool for testing
 
 Steps to run :
 
