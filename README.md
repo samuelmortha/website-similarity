@@ -32,15 +32,21 @@ Steps to run :
 3. Use the below curl commands to test :
 	
 	curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Orange_(fruit)"
+	
 	curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Lemon"
+	
 	curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Cisco_Systems&url2=https://en.wikipedia.org/wiki/Certis_Group"
+	
 	curl "http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Mansion&url2=https://en.wikipedia.org/wiki/Bungalow"
 
 4. Postman tool can also be used with below GET URLs :
 
 	http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Orange_(fruit)
+	
 	http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Lemon&url2=https://en.wikipedia.org/wiki/Lemon
+	
 	http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Cisco_Systems&url2=https://en.wikipedia.org/wiki/Certis_Group
+	
 	http://localhost:8080/website-similarity?url1=https://en.wikipedia.org/wiki/Mansion&url2=https://en.wikipedia.org/wiki/Bungalow
 
 5. Ctrl+C to terminate the application.
